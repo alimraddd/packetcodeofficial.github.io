@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 2</title>
+
+    <style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+}
+
+header {
+    background: #004a76;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 10px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #004a76;
+    border-bottom: 2px solid #004a76;
+    padding-bottom: 5px;
+}
+
+.work-experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+.work-experience li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #004a76;
+    background: #f9f9f9;
+}
+
+.projects-showcase .project {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projects-showcase .project img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.skills-chart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-chart li {
+    margin: 5px 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 5px 0;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: #004a76;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #003355;
+}
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="profile-section">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Your Name</h1>
+            <p>A short introduction about yourself or your biography goes here.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="work-experience">
+            <h2>Work Experience Timeline</h2>
+            <ul>
+                <li>
+                    <h3>Job Title at Company Name</h3>
+                    <p>Duration: Jan 2020 - Dec 2023</p>
+                    <p>Responsibilities: Describe key responsibilities or achievements in this role.</p>
+                </li>
+                <li>
+                    <h3>Job Title at Another Company</h3>
+                    <p>Duration: Jan 2017 - Dec 2019</p>
+                    <p>Responsibilities: Describe key responsibilities or achievements in this role.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="projects-showcase">
+            <h2>Projects Showcase</h2>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>A brief description of the project. Include relevant details about its purpose and impact.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>A brief description of the project. Include relevant details about its purpose and impact.</p>
+            </div>
+        </section>
+
+        <section class="skills-chart">
+            <h2>Skills Chart</h2>
+            <ul>
+                <li>HTML - Expert</li>
+                <li>CSS - Intermediate</li>
+                <li>JavaScript - Beginner</li>
+                <li>Python - Intermediate</li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label for="source">How did you hear about me?</label>
+                <select id="source" name="source">
+                    <option value="linkedin">LinkedIn</option>
+                    <option value="friend">Friend</option>
+                    <option value="search">Search Engine</option>
+                </select>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
